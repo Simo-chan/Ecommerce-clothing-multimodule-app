@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="male_model">male model</string>
+    <string name="welcoming_text">Define\nyourself in \nyour unique \nway.</string>
+    <string name="curvy_lines">curvy lines behind the male model</string>
+    <string name="get_started">Get Started</string>
+    <string name="create_account">Create an account</string>
+    <string name="let_s_create_an_account">Let\'s create your account.</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter your email address</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="agree_privacy_policy">By signing up, you agree to our Privacy Policy.</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="or">Or</string>
+    <string name="sign_up_with_facebook">Sign Up with Facebook</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="login_to_account">Login to your account</string>
+    <string name="great_to_sea_you">It\'s great to sea you again</string>
+    <string name="reset_password">Forgot your password? Reset your password</string>
+    <string name="login">Login</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

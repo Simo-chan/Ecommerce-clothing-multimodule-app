@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.DayNight">
+
+    <TextView
+        android:id="@+id/savedTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/saved_items"
+        android:textColor="@color/black"
+        android:textSize="@dimen/smaller_title_size"
+        app:layout_constraintEnd_toStartOf="@id/notification"
+        app:layout_constraintStart_toEndOf="@id/arrowBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/savedTitleTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/savedTitleTV"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/main_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_bell"
+        app:layout_constraintBottom_toBottomOf="@id/savedTitleTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/savedTitleTV"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/sectionLine"
+        style="@style/SectionLineStyle"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/savedTitleTV" />
+
+    <ImageView
+        android:id="@+id/heartIV"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/main_margin"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_heart_grey"
+        app:layout_constraintBottom_toTopOf="@id/noSavedTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/noSavedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/no_items"
+        android:textColor="@color/black"
+        android:textSize="@dimen/bigger_text_size"
+        app:layout_constraintBottom_toTopOf="@id/sectionLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/no_saved_items"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/regular_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noSavedTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">saved</string>
+    <string name="search">Search</string>
+    <string name="search_for_clothes">Search for clothes…</string>
+    <string name="no_results_found">No Results Found!</string>
+    <string name="no_results_description">Try a similar word or something \nmore general.</string>
+</resources>

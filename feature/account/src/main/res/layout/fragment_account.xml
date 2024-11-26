@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.DayNight">
+
+    <TextView
+        android:id="@+id/accountTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/smaller_title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:background="?android:attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/accountTitleTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/accountTitleTV"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <View
+        android:id="@+id/sectionLine"
+        style="@style/SectionLineStyle"
+        android:layout_margin="@dimen/main_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/accountTitleTV" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/sectionLine">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myOrdersButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_box"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/my_orders"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myDetailsButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_details"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/my_details"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/main_margin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myAddressButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_house"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/address_book"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/main_margin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/payMethodsButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_bank_card"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/payment_methods"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/main_margin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/notificationButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_bell_smaller"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/notifications"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/faqButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_question_mark"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/faqs"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/main_margin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/helpCenterButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_headphones"
+                android:drawableRight="@drawable/arrow_forward"
+                android:paddingHorizontal="0dp"
+                android:text="@string/help_center"
+                android:textAlignment="viewStart"
+                tools:ignore="RtlHardcoded,VisualLintButtonSize" />
+
+            <View
+                style="@style/SectionLineStyle"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logoutButton"
+                style="@style/BorderlessButtonStyle"
+                android:layout_marginStart="@dimen/main_margin"
+                android:layout_marginTop="@dimen/smaller_margin"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:drawableLeft="@drawable/ic_logout"
+                android:paddingHorizontal="0dp"
+                android:text="@string/logout"
+                android:textAlignment="viewStart"
+                android:textColor="@color/red"
+                tools:ignore="RtlHardcoded,TextContrastCheck,VisualLintButtonSize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

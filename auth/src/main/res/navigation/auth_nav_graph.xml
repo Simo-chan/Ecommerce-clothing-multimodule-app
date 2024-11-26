@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/onboarding">
+
+    <fragment
+        android:id="@+id/onboarding"
+        android:name="com.example.auth.OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboarding_to_createAcc"
+            app:destination="@id/createAcc"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAcc"
+        android:name="com.example.auth.CreateAccountFragment"
+        tools:layout="@layout/fragment_createaccount">
+        <action
+            android:id="@+id/action_createAcc_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.auth.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_createAcc"
+            app:destination="@id/createAcc"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim" />
+    </fragment>
+
+</navigation>

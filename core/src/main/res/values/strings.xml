@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">clothingshop</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="details">Details</string>
+    <string name="choose_size">Choose size</string>
+    <string name="price">Price</string>
+    <string name="notifications">Notifications</string>
+    <string name="no_notifs_yet">You haven\'t gotten any \nnotifications yet!</string>
+    <string name="no_notif_description">We\'ll alert you when something \ncool happens.</string>
+</resources>

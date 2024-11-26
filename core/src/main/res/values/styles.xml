@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainButtonStyle" parent="Theme.MaterialComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="BorderlessButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="InputTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomStart">@dimen/edit_text_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/edit_text_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/edit_text_corner_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/edit_text_corner_radius</item>
+        <item name="errorEnabled">true</item>
+    </style>
+
+    <style name="SectionLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/light_grey</item>
+    </style>
+</resources>

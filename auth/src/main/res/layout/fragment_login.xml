@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight">
+
+    <TextView
+        android:id="@+id/logInTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginTop="@dimen/main_margin"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/login_to_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/underLoginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/great_to_sea_you"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/regular_text_size" />
+
+    <TextView
+        android:id="@+id/emailLoginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginTop="@dimen/main_margin"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/regular_text_size" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLoginInputLayout"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginEnd="@dimen/main_margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"
+            android:textSize="@dimen/regular_text_size" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/passwordLoginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/regular_text_size" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLoginInputLayout"
+        style="@style/InputTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginEnd="@dimen/main_margin"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:textSize="@dimen/regular_text_size" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/resetPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginEnd="@dimen/main_margin"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/reset_password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/smaller_text_size" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logInButton"
+        style="@style/MainButtonStyle"
+        android:layout_margin="@dimen/main_margin"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/orLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/or"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/smaller_text_size" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginWithGoogleButton"
+        style="@style/MainButtonStyle"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/main_margin"
+        android:backgroundTint="@color/white"
+        android:text="@string/login_with_google"
+        android:textColor="@color/black"
+        app:icon="@drawable/icon_google"
+        app:iconGravity="textStart"
+        app:iconTintMode="multiply"
+        app:strokeColor="@color/light_grey"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginWithFaceBookButton"
+        style="@style/MainButtonStyle"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/main_margin"
+        android:backgroundTint="@color/blue"
+        android:text="@string/login_with_facebook"
+        android:textColor="@color/white"
+        app:icon="@drawable/icon_facebook"
+        app:iconGravity="textStart" />
+
+    <TextView
+        android:id="@+id/ifHaveAccountLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/already_have_account"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/smaller_text_size" />
+</LinearLayout>

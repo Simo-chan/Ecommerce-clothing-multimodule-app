@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">account</string>
+    <string name="account">Account</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_details">My details</string>
+    <string name="address_book">Address Book</string>
+    <string name="payment_methods">Payment methods</string>
+    <string name="faqs">FAQs</string>
+    <string name="help_center">Help Center</string>
+    <string name="logout">Logout</string>
+</resources>
